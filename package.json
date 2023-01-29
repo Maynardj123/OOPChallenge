@@ -1,0 +1,23 @@
+{
+  "name": "oopchallenge",
+  "version": "1.0.0",
+  "description": "Team Profile Generator",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maynardj123/OOPChallenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maynardj123/OOPChallenge/issues"
+  },
+  "homepage": "https://github.com/Maynardj123/OOPChallenge#readme"
+}
