@@ -15,5 +15,5 @@ test("make sure getRole works", () => {
 test("make sure the github works using getGithub", () => {
     const testValue = "gitHubUser"
     const employ = new Engineer("jacob",1,"jacobamaynard@gmail.com", testValue)
-    expect(employ.getGithub).toBe(testValue)
+    expect(employ.getGithub()).toBe(testValue)
 })
