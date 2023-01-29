@@ -21,7 +21,7 @@ function appMenu() {
     function createManager() {
         console.log('Please build your team');
         inquirer
-            .createPromptModule([
+            .prompt([
                 {
                     type: 'input',
                     name: 'managerName',
@@ -56,7 +56,7 @@ function appMenu() {
                         }
                         return 'Please enter a valid email address.';
                     },
-                }
+                },
                 {
                     type: 'input',
                     name: 'managerOfficeNumber',
@@ -68,7 +68,7 @@ function appMenu() {
                         }
                         return 'Please enter a positive number greater than zero';
                     },
-                }
+                },
             ])
             .then((answers) => {
                 const manager = new Manager(
@@ -88,7 +88,7 @@ function appMenu() {
             .prompt([
                 {
                     type: 'list',
-                    name: 'memberChoice'
+                    name: 'memberChoice',
                     message: "Which type of team member would you like to add?",
                     choices: [
                         'Engineer',
@@ -117,7 +117,7 @@ function appMenu() {
                 {
                     type: 'input',
                     name: 'engineerName',
-                    message: "what is you engineer's name?",
+                    message: "what is engineer's name?",
                     Validate: (answer) => {
                         if (answer !== '') {
                             return true;
@@ -166,7 +166,7 @@ function appMenu() {
                 },
                
             ])
-            .then((answer) => {
+            .then((answers) => {
                 const engineer = new Engineer(
                     answers.engineerName,
                     answers.engineerId,
@@ -185,7 +185,7 @@ function appMenu() {
                 {
                     type: 'input',
                     name: 'internName',
-                    message: "what is you intern's name?",
+                    message: "what is intern's name?",
                     Validate: (answer) => {
                         if (answer !== '') {
                             return true;
@@ -224,7 +224,7 @@ function appMenu() {
                 {
                     type: 'input',
                     name: 'internSchool',
-                    message: "What is your intern's school?"
+                    message: "What is your intern's school?",
                     Validate: (answer) => {
                         if (answer !== '') {
                             return true;
@@ -251,7 +251,7 @@ function appMenu() {
         if (!fs.existsSync(DIST_DIR)) {
             fs.mkdirSync(DIST_DIR);
         }
-        fs.writeFileSync(distPath, render(teamMembers), 'utf-8');
+        fs.writeFileSync(distpath, render(teamMembers), 'utf-8');
     }
 
     createManager();

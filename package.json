@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Maynardj123/OOPChallenge/issues"
   },
-  "homepage": "https://github.com/Maynardj123/OOPChallenge#readme"
+  "homepage": "https://github.com/Maynardj123/OOPChallenge#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
 }

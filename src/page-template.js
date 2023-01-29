@@ -1,4 +1,4 @@
-const Engineer = require("../lib/Engineer");
+// const Engineer = require("../lib/Engineer");
 
 const generateTeam = team => {
 
@@ -13,11 +13,11 @@ const generateTeam = team => {
             <ul class="list-group">
                 <li class="list-group-item">ID: ${manager.getId()}</li>
                 <li class="list-group-item">Email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></li>
-                <li class="list-group-item">Office number: ${manager.getOfficeNumber()}</li>
+                <li class="list-group-item">Office number: ${manager.getofficeNumber()}</li>
             </ul>
         </div>
     </div>
-        `;
+    `;
     }
 
     const generateEngineer = engineer => {
@@ -35,7 +35,7 @@ const generateTeam = team => {
             </ul>
         </div>
     </div> 
-        `;
+     `;
     }
 
     const generateIntern = intern => {
@@ -53,7 +53,7 @@ const generateTeam = team => {
             </ul>
         </div>
     </div>
-        `
+    `
     }
     const html = [];
 
@@ -65,13 +65,13 @@ const generateTeam = team => {
     
     html.push(team
         .filter(employee => employee.getRole() === "Engineer")
-        .map(engineer => generateManager(engineer))
+        .map(engineer => generateEngineer(engineer))
         .join("")        
     );
     
     html.push(team
         .filter(employee => employee.getRole() === "Intern")
-        .map(intern => generateManager(intern))
+        .map(intern => generateIntern(intern))
         .join("")        
     );
     
@@ -112,5 +112,5 @@ module.exports = team => {
         </div>
     </body>
     </html>
-        `;
+    `;
 }
