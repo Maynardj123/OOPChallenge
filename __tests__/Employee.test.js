@@ -8,19 +8,19 @@ test("creating a new employee", () => {
 test("does the name value work", () => {
     const name = "jacob"
     const employ = new Employee(name);
-    expect(typeof(employ.name)).toBe(name)
+    expect(employ.name).toBe(name);
 })
 
 test("does the id value work", () => {
     const id= 1
     const employ = new Employee("jacob", id)
-    expect(typeof(employ.id)).toBe(id)
+    expect(employ.id).toBe(id)
 })
 
 test("does the email value work", () => {
     const email = "jacobamaynard@gmail.com"
-    const employ = new Employee(jacob, 2, email)
-    expect(typeof(employ.email)).toBe(email)
+    const employ = new Employee("jacob", 2, email)
+    expect(employ.email).toBe(email)
 })
 
 test("make sure the getName works", () => {

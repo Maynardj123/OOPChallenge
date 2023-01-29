@@ -15,5 +15,5 @@ test("make sure getRole works", () => {
 test("make sure the school works using getSchool", () => {
     const testValue = "UT"
     const employ = new Intern("jacob",1,"jacobamaynard@gmail.com", testValue)
-    expect(employ.getSchool).toBe(testValue)
+    expect(employ.getSchool()).toBe(testValue)
 })
