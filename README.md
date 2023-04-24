@@ -4,7 +4,10 @@
   ## Title
   Team Profile Generator
 
-
+![GitHub language count](https://img.shields.io/github/languages/count/Maynardj123/OOPChallenge?style=flat-square)
+![GitHub top language](https://img.shields.io/github/languages/top/Maynardj123/OOPChallenge?color=green&style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/Maynardj123/OOPChallenge?color=yellow&style=flat-square)
+![GitHub](https://img.shields.io/github/license/Maynardj123/OOPChallenge?color=orange&style=flat-square)
 
   ## Description
   I built this in order to get a better understanding on Node.js and Javascript. My motivation was to learn more on how to test my files. I learned more about writing prompts and how to structure my information.
